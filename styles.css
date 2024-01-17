@@ -1,0 +1,90 @@
+:root {
+  background-color: #003459;
+  --container-color: #f8f9fa;
+  --label-color: #212529;
+  --line-and-button-color: #ff7d00;
+  --fact-container-color: #03045e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+  color: var(--label-color);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.container {
+  color: var(--container-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+.inputcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: min(100vw, 450px);
+  min-height: 100px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--container-color);
+  border-radius: 20px;
+  box-shadow: 0 6px 6px #002ead;
+}
+
+#palindromeInput {
+  height: 30px;
+  width: 250px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid var(--line-and-button-color);
+  background-color: var(--container-color);
+  text-align: center;
+  font-size: 1rem;
+}
+
+#checkButton {
+  width: 90px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--line-and-button-color);
+  border: none;
+  color: var(--container-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#checkButton:hover {
+  background-color: rgb(236, 206, 32);
+}
+
+#hintContainer {
+  background-color: var(--fact-container-color);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hinttext {
+  font-style: italic;
+}
+
+#output {
+  font-size: x-large;
+  color: black;
+  padding: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
